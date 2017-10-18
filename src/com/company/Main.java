@@ -3,16 +3,23 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	int[] v = {5,16,54,12,15,2,0};
-        VectorHelper.TrierVect(v);
+        try{
+            int[] v = VectorHelper.SommerVecteurs(new int[]{5,16,54,12,15,2,0},new int[]{1,5,2});
+            AffichVect(v);
+        }
+        catch(DifferentSizeException e){
+            System.err.println("Diff Size Exception !!");
+        }
+    }
+    
+    private static void AffichVect(int[] v){
         for(int i = 0;i<v.length;i++){
             System.out.print(v[i]+",");
         }
-        //i = 16, j = 5 : 5, 16
-        //i = 54, j = 5 | i = 54, j = 16 : 5, 16, 54
-        //i = 12, j = 5 | i = 12, j = 16
     }
 }
+
+class DifferentSizeException extends Exception{};
 
 class VectorHelper{
     
@@ -27,5 +34,16 @@ class VectorHelper{
                 }
             }
         }
+    }
+    
+    public static int[] SommerVecteurs(int[] vect1, int[] vect2) throws DifferentSizeException{
+        if(vect1.length != vect2.length){
+            throw new DifferentSizeException();
+        }
+        int[] res = new int[vect1.length];
+        for(int i = 0;i<vect1.length;i++){
+            res[i] = vect1[i] + vect2[i];
+        }
+        return res;
     }
 }
