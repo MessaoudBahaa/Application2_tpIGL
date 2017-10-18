@@ -8,6 +8,9 @@ public class Main {
         for(int i = 0;i<v.length;i++){
             System.out.print(v[i]+",");
         }
+        //i = 16, j = 5 : 5, 16
+        //i = 54, j = 5 | i = 54, j = 16 : 5, 16, 54
+        //i = 12, j = 5 | i = 12, j = 16
     }
 }
 
@@ -20,7 +23,7 @@ class VectorHelper{
                     int a = vect[i];
                     vect[i] = vect[j];
                     vect[j] = a;
-                    break;
+                    continue;
                 }
             }
         }
