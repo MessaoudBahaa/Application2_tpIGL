@@ -4,6 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
+        
+
     }
 }
 class MinMax{
@@ -34,15 +36,20 @@ class MinMax{
     public void setMin(int min) {
         this.min = min;
     }
+    public void afficher(){
+        System.out.println("le max est : "+max);
+        System.out.println("le min est : "+min);
+    }
 }
 class VectorHelper{
 
-	 public void Multiplier(int[] vect, int N){
+	 public static void Multiplier(int[] vect, int N){
 	     for(int i=0;i<vect.length;i++){
 	         vect[i]=vect[i]*N;
          }
      }
-     public MinMax GetMinMax(int[] vect){
+
+     public static MinMax GetMinMax(int[] vect){
 	     if(vect.length!=0) {
              MinMax minMax = new MinMax(vect[0],vect[0]);
              for (int i = 1; i < vect.length; i++) {
