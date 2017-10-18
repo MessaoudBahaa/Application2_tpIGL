@@ -8,5 +8,10 @@ public class Main {
 }
 
 class VectorHelper{
-	
+
+	 public void Multiplier(int[] vect, int N){
+	     for(int i=0;i<vect.length;i++){
+	         vect[i]=vect[i]*N;
+         }
+     }
 }
