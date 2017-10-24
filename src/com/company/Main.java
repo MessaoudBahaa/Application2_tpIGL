@@ -117,7 +117,7 @@ class MinMax{
     private int max;
     private int min;
 
-    public MinMax(int max, int min) {
+    public MinMax( int min,int max) {
         this.max = max;
         this.min = min;
     }
@@ -146,7 +146,10 @@ class MinMax{
         System.out.println("le min est : "+min);
     }
 
-
+    @Override
+    public boolean equals(Object o) {
+        if ((((MinMax)o).getMax()== max ) && (((MinMax)o).getMin()== min )){return true;}else {return false;}
+    }
 
 }
 
