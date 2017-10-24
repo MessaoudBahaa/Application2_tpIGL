@@ -43,11 +43,13 @@ class MinMax{
 }
 class VectorHelper{
 
-	 public static void Multiplier(int[] vect, int N){
+	 public static int[] Multiplier(int[] vect, int N){
 	     for(int i=0;i<vect.length;i++){
 	         vect[i]=vect[i]*N;
          }
+         return vect;
      }
+
 
      public static MinMax GetMinMax(int[] vect){
 	     if(vect.length!=0) {
