@@ -8,6 +8,10 @@ public class Main {
 
     }
 }
+
+/**
+ * Une classe qui respresente 2 valeurs entieres, un Min et un Max
+ */
 class MinMax{
     private int max;
     private int min;
@@ -17,7 +21,7 @@ class MinMax{
         this.min = min;
     }
 
-    MinMax(int m){
+    MinMax(){
         max=0;
         min=0;
     }
@@ -43,6 +47,12 @@ class MinMax{
 }
 class VectorHelper{
 
+    /**
+     * Multiplier un vecteur par un entier
+     * @param vect un vecteur des entiers
+     * @param N un entier
+     * @return le resultat de multiplication de vect par N
+     */
 	 public static int[] Multiplier(int[] vect, int N){
 	     for(int i=0;i<vect.length;i++){
 	         vect[i]=vect[i]*N;
@@ -50,7 +60,11 @@ class VectorHelper{
          return vect;
      }
 
-
+    /**
+     * Retourner le Min et le Max d'un vecteur 
+     * @param vect
+     * @return le max et le min du vecteur vect
+     */
      public static MinMax GetMinMax(int[] vect){
 	     if(vect.length!=0) {
              MinMax minMax = new MinMax(vect[0],vect[0]);
