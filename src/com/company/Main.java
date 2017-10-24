@@ -6,7 +6,12 @@ public class Main {
         //try{
             //int[] v = VectorHelper.SommerVecteurs(new int[]{5,16,54,12,15,2,0},new int[]{1,5,2});
             int[] v = {5,16,54,12,15,2,0};
+            System.out.println("Debut :");
             AffichVect(v);
+            System.out.println("Tri :");
+            VectorHelper.TrierVect(v);
+            AffichVect(v);
+            System.out.println("Inverse :");
             VectorHelper.InverserVecteur(v);
             AffichVect(v);
         /*}
@@ -19,6 +24,7 @@ public class Main {
         for(int i = 0;i<v.length;i++){
             System.out.print(v[i]+",");
         }
+        System.out.println("");
     }
 }
 
