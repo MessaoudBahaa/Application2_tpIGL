@@ -36,7 +36,7 @@ class DifferentSizeException extends Exception{};
  */
 class VectorHelper{
     /**
-     * Trier les éléments d'un vecteur en ordre croissant.
+     * Trier les elements d'un vecteur en ordre croissant.
      * @param vect 
      * Le vecteur à trier.
      */
@@ -59,15 +59,15 @@ class VectorHelper{
     }
     
     /**
-     * Sommer les éléments de deux vecteurs.
+     * Sommer les elements de deux vecteurs.
      * @param vect1
      * Le premier vecteur.
      * @param vect2
-     * Le deuxième vecteur.
+     * Le deuxieme vecteur.
      * @return
-     * Un nouveau vecteur contenant la somme des éléments des 2 vecteurs.
+     * Un nouveau vecteur contenant la somme des elements des 2 vecteurs.
      * @throws DifferentSizeException 
-     * Si les 2 vecteurs d'éntrée ont des tailles differentes.
+     * Si les 2 vecteurs d'entree ont des tailles differentes.
      */
     public static int[] SommerVecteurs(int[] vect1, int[] vect2) throws DifferentSizeException{
         if(vect1.length != vect2.length){
@@ -81,9 +81,9 @@ class VectorHelper{
     }
     
     /**
-     * Inverser l'ordre des éléments d'un vecteur.
+     * Inverser l'ordre des elements d'un vecteur.
      * @param vect 
-     * Le vecteur à inverser.
+     * Le vecteur a inverser.
      */
     public static void InverserVecteur(int[] vect){
         for(int i = 0;i<vect.length/2;i++){
