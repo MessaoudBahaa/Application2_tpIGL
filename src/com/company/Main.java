@@ -12,7 +12,7 @@ class DifferentSizeException extends Exception{}
  * La class de manipulation des vecteurs.
  * @author BOUZAOUIT Oussama / BERBACHE Messaoud Bahe Eddine
  */
-class VectorHelper1{
+class VectorHelper2{
     /**
      * Trier les elements d'un vecteur en ordre croissant.
      * @param vect 
